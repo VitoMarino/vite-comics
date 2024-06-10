@@ -9,3 +9,12 @@
     align-items: center;
     padding-left: 9rem;
 }
+
+@mixin button {
+    border-radius: none;
+    background-color: #303030;
+    color: white;
+    border-color: #3192f9;
+    padding: .5rem;
+    font-size: .8rem;
+}

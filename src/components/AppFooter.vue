@@ -147,7 +147,7 @@ export default{
 <footer>
     <section class="primo-Footer">
         <nav>
-            <ul class="primo-ul">
+            <ul>
             <li>
                 <h3>
                     DC COMICS
@@ -156,9 +156,7 @@ export default{
             <li v-for="item in linkDcComics" :key="item.id">
                 {{ item.title }}
             </li>
-        </ul>
-
-        <ul class="secondo-ul">
+            <!--SHOP-->
             <li>
                 <h3>
                     SHOP
@@ -169,7 +167,7 @@ export default{
             </li>
         </ul>
 
-        <ul class="terzo-ul">
+        <ul>
             <li>
                 <h3>
                     DC
@@ -180,7 +178,7 @@ export default{
             </li>
         </ul>
 
-        <ul class="quarto-ul">
+        <ul>
             <li>
                 <h3>
                     SITES
@@ -190,23 +188,33 @@ export default{
                 {{ item.title }}
             </li>
         </ul>
-        </nav>
+
+        <ul>
+            <li>
+                <img class="li-img" src="/img/dc-logo-bg.png" alt="Logo DC">
+            </li>
+        </ul>
         
+    </nav>
     </section>
 
-    <section class="Subscribe">
-        <ul>
+    <section>
+        <nav class="nav-footer-social">
+            <ul>
             <button>
                 SIGN-UP NOW!
             </button>
         </ul>
         <ul>
-
+            <li>
+                Follow Us
+            </li>
         </ul>
+        </nav>
     </section>
 
-    <section>
-
+    <section class="footer-finale">
+    
     </section>
 </footer>
 </template>
@@ -219,13 +227,47 @@ export default{
         background-image: url(/img/footer-bg.jpg);
         background-repeat: no-repeat;
         height: 16.5rem;
+        color:#525553;
+    }
+
+    nav ul li h3 {
         color: white;
+    }
+
+    nav ul li {
+        margin: .5rem;
     }
 
     nav{
         display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        font-size: .5rem;
     }
 
+    img.li-img {
+        width: 200px;
+        margin-left: 10rem;
+    }
 
+    nav.nav-footer-social{
+        height: 5rem;
+        background-color: $bg_color_grey;
+        font-size: .8rem;
+        text-transform: uppercase;
+        color: $color_text;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    section.footer-finale{
+        background-color: $bg_color_black;
+        width: 100vw;
+        height: 8rem;
+    }
+
+    button{
+        @include button;
+    }
 </style>
