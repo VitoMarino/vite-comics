@@ -1,1 +1,11 @@
+@mixin my_d_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+@mixin my_d_flex_two {
+    display: flex;
+    align-items: center;
+    padding-left: 9rem;
+}
