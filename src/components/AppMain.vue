@@ -94,19 +94,8 @@ export default{
 
     <!--Aggiunta delle immagini in APPMAINPARZIALE-->
     <div class="cards">
-        <article class="card" v-for="(item, index) in cards" :key="index">
-            <img :src="item.thumb" :alt="item.type">
-            <h4>
-                {{ item.series }}
-            </h4>
-            <p>
-                {{ item.price }}
-            </p>
-        </article>
+        <AppMainParziale v-for="(item, index) in cards" :key="index" :singleCard="item"/>
     </div>
-    <AppMainParziale 
-    
-    />
 </main>
 </template>
 
@@ -126,18 +115,6 @@ export default{
         color: white;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
-        height: 20rem;
-        width: 100%;
-
-        article.card{
-            width: calc(100% / 6);
-            font-size: 10px;
-            
-            img {
-                width: 70px;
-            }
-        }
     }
 </style>
