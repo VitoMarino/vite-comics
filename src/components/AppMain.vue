@@ -102,7 +102,10 @@ export default{
 <style lang="scss" scoped>
     @use '../styles/parziali/variabili'  as *;
     @use '../styles/parziali/mixins' as*;
-    
+    main{
+        background-color: $bg_color_black;
+    }
+
     section.jumbotron{
         width: 100vw;
         height: 18rem;
@@ -111,7 +114,8 @@ export default{
     }
 
     div.cards{
-        background-color: $bg_color_black;
+        max-width: 950px;
+        margin: 0 auto;
         color: white;
         display: flex;
         flex-wrap: wrap;
