@@ -122,16 +122,21 @@ export default{
     }
 
     div.cards{
+        background-color: $bg_color_black;
+        color: white;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        width: 100vw;
+        align-items: center;
+        justify-content: center;
         height: 20rem;
+        width: 100%;
 
         article.card{
             width: calc(100% / 6);
+            font-size: 10px;
+            
             img {
-                width: 30%;
+                width: 70px;
             }
         }
     }

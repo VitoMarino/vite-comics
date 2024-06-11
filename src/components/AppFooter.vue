@@ -231,8 +231,13 @@ export default{
     @use '../styles/parziali/variabili'  as *;
     @use '../styles/parziali/mixins' as*;
 
+    footer{
+        width: 100vw;
+    }
+
     section.primo-Footer {
         background-image: url(/img/footer-bg.jpg);
+        background-size: cover;
         background-repeat: no-repeat;
         height: 16.5rem;
         color:#525553;
