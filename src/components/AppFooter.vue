@@ -249,6 +249,10 @@ export default{
 
     nav.nav-prima ul li {
         margin: .5rem;
+
+        &:hover {
+            color: $color_text;
+        }
     }
 
     nav.nav-prima{

@@ -17,4 +17,17 @@
     border-color: #3192f9;
     padding: .5rem;
     font-size: .8rem;
+    font-weight: bold;
+}
+
+@mixin button-main {
+    background-color: #3192f9;
+    color: white;
+    border-radius: none;
+    padding: .5rem .6rem .5rem .6rem;
+    font-size: .8rem;
+    border: none;
+    text-transform: uppercase;
+    margin-left: 8rem;
+    font-weight: bold;
 }

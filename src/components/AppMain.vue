@@ -92,6 +92,10 @@ export default{
         
     </section>
 
+    <div class="button-main">
+        <button>Current series</button>
+    </div>
+
     <!--Aggiunta delle immagini in APPMAINPARZIALE-->
     <div class="cards">
         <AppMainParziale v-for="(item, index) in cards" :key="index" :singleCard="item"/>
@@ -121,4 +125,9 @@ export default{
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    div.button-main button {
+        @include button-main;
+    }
+
 </style>
