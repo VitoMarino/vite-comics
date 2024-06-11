@@ -146,7 +146,7 @@ export default{
 <template>
 <footer>
     <section class="primo-Footer">
-        <nav>
+        <nav class="nav-prima">
             <ul>
             <li>
                 <h3>
@@ -210,6 +210,14 @@ export default{
                 Follow Us
             </li>
         </ul>
+
+        <div class="div-social">
+            <img src="/img/footer-facebook.png" alt="Facebook">
+            <img src="/img/footer-twitter.png" alt="Twitter ma ora si chiama X">
+            <img src="/img/footer-youtube.png" alt="YouTube">
+            <img src="/img/footer-pinterest.png" alt="Pinterest">
+            <img src="/img/footer-periscope.png" alt="Periscope">
+        </div>
         </nav>
     </section>
 
@@ -234,11 +242,11 @@ export default{
         color: white;
     }
 
-    nav ul li {
+    nav.nav-prima ul li {
         margin: .5rem;
     }
 
-    nav{
+    nav.nav-prima{
         display: flex;
         justify-content: center;
         padding-top: 2rem;
@@ -269,5 +277,15 @@ export default{
 
     button{
         @include button;
+    }
+
+    div.div-social img{
+        margin-right: .8rem;
+
+        &:hover {
+            background-color: white;
+            border-radius: 2rem;
+            padding: .2rem;
+        }
     }
 </style>

@@ -71,11 +71,7 @@ export default{
 
 <template>
 <header>
-    <section class="primo-Header">
-
-    </section>
-    
-    <section class="secondo-Header">
+    <section>
         <nav>
             <img src="/img/dc-logo.png" alt="Logo DC Comics">
         </nav>
@@ -94,13 +90,7 @@ export default{
     @use '../styles/parziali/variabili'  as *;
     @use '../styles/parziali/mixins' as*;
 
-    section.primo-Header{
-        width: 100vw;
-        height: 5rem;
-        background-color: $bg_color_black;
-    }
-
-    section.secondo-Header{
+    section{
         display: flex;
         justify-content: space-around;
         align-items: center;

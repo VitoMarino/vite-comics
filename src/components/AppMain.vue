@@ -9,10 +9,8 @@ export default{
 
 <template>
 <main>
-    <section>
-        <p>
-        --> Content goes here <--
-        </p>
+    <section class="jumbotron">
+        
     </section>
 </main>
 </template>
@@ -21,11 +19,10 @@ export default{
     @use '../styles/parziali/variabili'  as *;
     @use '../styles/parziali/mixins' as*;
     
-    section{
+    section.jumbotron{
         width: 100vw;
-        height: 5rem;
-        background-color: $bg_color_black;
-        color: white;
-        @include my_d_flex_two;
+        height: 18rem;
+        background-image: url(/img/jumbotron.jpg);
+        background-size: cover;
     }
 </style>
